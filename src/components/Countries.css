@@ -1,0 +1,52 @@
+.countries{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+.countries .details{
+    background: #2b3743;
+    padding: 40px 20px;
+    margin-top: -20px;
+    border-radius: 0 0 5px 5px;
+}
+.countries .details h3{
+    padding-bottom: 10px;
+    color: #EDF5F8;
+}
+.countries .details h4{
+    padding-bottom: 5px;
+    color: #EDF5F8;
+}
+.countries .details h4 span{
+    font-weight: 300;
+    color: #A6AFB8;
+}
+.countries .article{
+    box-shadow: 0 10px 10px rgba(7, 11, 14, 0.5);
+}
+
+.article img{
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+}
+@media (min-width: 640px) {
+    .countries{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .countries{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+@media (min-width: 992px) {
+    .header, .countries{
+        padding: 20px 50px;
+    }
+    .countries{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+    }
+}
