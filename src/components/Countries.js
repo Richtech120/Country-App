@@ -2,7 +2,7 @@ import React from "react";
 import Country from "./Country";
 import "./Countries.css";
 
-const Countries = ({ countries }) => {
+const Countries = ({ darkMode, countries }) => {
   return (
     <div className="countries">
       {countries.map((country, index) => (
@@ -13,6 +13,7 @@ const Countries = ({ countries }) => {
           region={country.region}
           capital={country.capital ? country.capital[0] : "No Capital"}
           flag={country.flags.png}
+          darkMode={darkMode}
         />
       ))}
     </div>

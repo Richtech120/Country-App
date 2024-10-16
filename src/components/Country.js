@@ -1,20 +1,64 @@
 import React from "react";
-import "./Countries.css"
+import "./Countries.css";
 
-function Country({ name, population, region, capital, flag }) {
+function Country({ name, population, region, capital, flag, darkMode }) {
   return (
     <div className="article">
       <img src={flag} alt={name} />
-      <div className="details">
-        <h3>{name}</h3>
-        <h4>
-          Population: <span>{population}</span>
+      <div
+        className="details"
+        style={{
+          color: darkMode ? "#fff" : "#000",
+        }}
+      >
+        <h3
+          style={{
+            color: darkMode ? "#fff" : "#000",
+          }}
+        >
+          {name}
+        </h3>
+        <h4
+          style={{
+            color: darkMode ? "#fff" : "#000",
+          }}
+        >
+          Population:{" "}
+          <span
+            style={{
+              color: darkMode ? "#fff" : "#000",
+            }}
+          >
+            {population}
+          </span>
         </h4>
-        <h4>
-          Region: <span>{region}</span>
+        <h4
+          style={{
+            color: darkMode ? "#fff" : "#000",
+          }}
+        >
+          Region:{" "}
+          <span
+            style={{
+              color: darkMode ? "#fff" : "#000",
+            }}
+          >
+            {region}
+          </span>
         </h4>
-        <h4>
-          Capital: <span>{capital}</span>
+        <h4
+          style={{
+            color: darkMode ? "#fff" : "#000",
+          }}
+        >
+          Capital:{" "}
+          <span
+            style={{
+              color: darkMode ? "#fff" : "#000",
+            }}
+          >
+            {capital}
+          </span>
         </h4>
       </div>
     </div>

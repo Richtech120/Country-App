@@ -2,8 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2b3743;
     padding: 10px 20px;
+    
+}
+.header .mode{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
 }
 @media (min-width: 992px) {
     .header{
